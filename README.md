@@ -28,7 +28,9 @@ The server infrastructure was built utilizing an automated shell deployment mana
 
 
 ### 2. Connected Endpoint Fleet Telemetry
-[This section will track our connected client endpoints once verified]
+The endpoint deployment phase was executed by configuring a lightweight background telemetry daemon on the target Ubuntu Linux node and mapping its transmission destination properties to the central SIEM.
+<img width="1290" height="894" alt="ubuntu_agent_active" src="https://github.com/user-attachments/assets/5967c466-1e84-4e1e-9cfa-fd8364b6b36c" />
+
 
 ---
 
