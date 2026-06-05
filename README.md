@@ -23,7 +23,9 @@ This project demonstrates the deployment of a hybrid enterprise log collection a
 ### 1. Central SIEM Node Automated Deployment
 The server infrastructure was built utilizing an automated shell deployment manager. Hardware constraint checks were dynamically bypassed utilizing system flag variables (`-i`) to allow baseline functionality on testing virtual environments.
 
-> [PASTE YOUR PROGRESS SCREENSHOT HERE LATER]
+1. Central SIEM Node Automated Deployment
+<img width="1919" height="1036" alt="wazuh_install_complete" src="https://github.com/user-attachments/assets/8c3972e6-0805-4f3b-9fcf-ad2d617186ae" />
+
 
 ### 2. Connected Endpoint Fleet Telemetry
 [This section will track our connected client endpoints once verified]
