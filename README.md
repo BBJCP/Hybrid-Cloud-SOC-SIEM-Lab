@@ -33,7 +33,7 @@ The endpoint deployment phase was executed by configuring a lightweight backgrou
 
 ### 3. Central Web Console Verification
 Successfully authenticated to the visual security operations panel over the secure internal network. The console successfully registered the baseline analytical metrics.
-<img width="1139" height="847" alt="initial_dashboard_view" src="https://github.com/user-attachments/assets/7a2cde65-5da1-4cbd-aac7-8b480df76d9e" />
+<img width="1041" height="860" alt="dual_fleet_active" src="https://github.com/user-attachments/assets/8c4a0bb0-894e-429a-8ca4-e56d6cf0397c" />
 
 
 
