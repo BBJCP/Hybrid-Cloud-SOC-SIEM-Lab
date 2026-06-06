@@ -31,6 +31,11 @@ The server infrastructure was built utilizing an automated shell deployment mana
 The endpoint deployment phase was executed by configuring a lightweight background telemetry daemon on the target Ubuntu Linux node and mapping its transmission destination properties to the central SIEM.
 <img width="1290" height="894" alt="ubuntu_agent_active" src="https://github.com/user-attachments/assets/5967c466-1e84-4e1e-9cfa-fd8364b6b36c" />
 
+### 3. Central Web Console Verification
+Successfully authenticated to the visual security operations panel over the secure internal network. The console successfully registered the baseline analytical metrics.
+<img width="1139" height="847" alt="initial_dashboard_view" src="https://github.com/user-attachments/assets/7a2cde65-5da1-4cbd-aac7-8b480df76d9e" />
+
+
 
 ---
 
