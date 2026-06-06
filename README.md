@@ -44,7 +44,8 @@ Successfully authenticated to the visual security operations panel over the secu
 * **Attack Vector Simulation**: Initiated an intentional, high-volume endpoint authentication brute-force stress sequence using native administrative spoofing mechanisms mapping directly to **MITRE ATT&CK T1110 (Brute Force)**. 
 * **Telemetry Findings & SIEM Analysis**: The host-based XDR agent sensor immediately intercepted the consecutive login violations. The data stream cleanly extracted and parsed native Windows Security Event ID **4625 (An account failed to log on)**. The metric dashboard records logged a massive alert volume spike exceeding 600+ hits, extracting granular tracking parameters directly into the analytical table interface for threat isolation and containment profiling.
 
-![Centralized SIEM Brute Force Detection Alert](<img width="1125" height="824" alt="brute_force_detected" src="https://github.com/user-attachments/assets/70a0d117-123b-4db2-9b6b-e0775b7a2386" />)
+![Centralized SIEM Brute Force Detection Alert]
+<img width="1125" height="824" alt="brute_force_detected" src="https://github.com/user-attachments/assets/70a0d117-123b-4db2-9b6b-e0775b7a2386" />
 
 ---
 
