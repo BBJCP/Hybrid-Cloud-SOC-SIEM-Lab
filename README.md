@@ -50,4 +50,19 @@ Successfully authenticated to the visual security operations panel over the secu
 ---
 
 ## 🛡️ Phase III: Hardening & Enterprise Remediation Strategies
-[This section will document how we block these specific attacks]
+
+To mitigate the active brute-force threat vector analyzed during the Red Team simulation phase, the following enterprise-grade defensive hardening configurations were engineered to minimize the hybrid infrastructure's attack surface:
+
+### 1. Implementing Account Lockout Threshold Policies (Windows Node)
+* **Defensive Strategy**: Configured a local group security policy restriction to automatically lock out any user identity account after 5 consecutive unauthenticated validation attempts. This neutralizes automated dictionary scanning scripts entirely.
+* **Implementation Mechanism**: Leveraged administrative controls to enforce threshold limits via the Local Security Policy domain manager:
+  `Account Policies -> Account Lockout Policy -> Account lockout threshold = 5`
+
+### 2. Disabling Plain-Text Password Authentication (Linux Server Node)
+* **Defensive Strategy**: Modified the core secure-shell daemon configuration on the Ubuntu production instance to enforce cryptographic key-pair routing, completely removing password guessing vectors across internal ports.
+* **Implementation Mechanism**: Hardened parameters inside `/etc/ssh/sshd_config` by explicitly defining:
+  `PasswordAuthentication no`
+  `PubkeyAuthentication yes`
+
+### 3. Management Interface Network Isolation (Network Infrastructure)
+* **Defensive Strategy**: Transitioned critical administrative communication boundaries (such as RDP port 3389 and SSH port 22) off public-facing listening scopes, wrapping them natively behind an authenticated Virtual Private Network (VPN) layer to deny external line-of-sight network discovery.
